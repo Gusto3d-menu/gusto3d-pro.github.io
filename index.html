@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gustó3D Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gustó3D Pro</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+    <style>
+        html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;background:#000}
+        #loading-screen{position:fixed;top:0;left:0;width:100%;height:100%;background:#000;display:flex;flex-direction:column;justify-content:center;align-items:center;z-index:3000;transition:opacity .8s}
+        .logo-gusto{width:250px;height:auto;margin-bottom:35px}
+        #ui-overlay{position:fixed;bottom:40px;left:0;width:100%;display:flex;justify-content:center;gap:30px;z-index:1000;opacity:0;transition:opacity .5s}
+        #ui-overlay.show{opacity:1;display:flex!important}
+        .btn-gusto{padding:18px 35px;background:#25D366;color:white;border:2px solid #fff;border-radius:50px;font-weight:700;font-size:18px;cursor:pointer}
+    </style>
 </head>
-<body style="margin:0;background:black;color:white;font-family:sans-serif;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
-    <img src="logo-banco.jpg" style="width:250px;max-width:90vw" /><br>
-    <div style="font-size:24px;margin:20px 0">✅ Archivos OK</div>
-    <div style="font-size:18px">Si ves esto + logo = HTML OK</div>
-    <br><a href="https://gusto3d-menu.github.io/gusto3d-pro.github.io" style="color:#25D366">← Volver AR</a>
-</body>
-</html>
+<body>
+    <div id="loading
